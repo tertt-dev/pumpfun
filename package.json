@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:solana\"",
+    "dev": "npm run docker:db && concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:solana\"",
     "dev:frontend": "cd apps/frontend && npm run dev",
     "dev:backend": "cd apps/backend && npm run dev",
     "dev:solana": "cd apps/solana && anchor test",
@@ -16,6 +16,7 @@
     "build:backend": "cd apps/backend && npm run build",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
+    "docker:db": "docker-compose up -d postgres redis",
     "setup": "./scripts/setup.sh"
   },
   "devDependencies": {

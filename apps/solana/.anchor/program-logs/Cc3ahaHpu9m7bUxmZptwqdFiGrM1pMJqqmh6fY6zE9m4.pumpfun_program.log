@@ -1,0 +1,10 @@
+Streaming transaction logs mentioning Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4. Confirmed commitment
+Transaction executed in slot 2:
+  Signature: 3nywgYQZMCVzLCvToQmc9NkckSoekcqx9qeqNcD8ibfuG1FBp5sTN5K5hbcQfW7GLASik5x8VdMtMpu4quRrocDe
+  Status: Ok
+  Log Messages:
+    Program Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4 invoke [1]
+    Program log: Instruction: Initialize
+    Program log: Greetings from: Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4
+    Program Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4 consumed 3087 of 200000 compute units
+    Program Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4 success

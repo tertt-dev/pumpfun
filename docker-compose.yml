@@ -20,37 +20,6 @@ services:
     volumes:
       - redis_data:/data
 
-  backend:
-    build:
-      context: ./apps/backend
-      dockerfile: Dockerfile
-    ports:
-      - "3001:3001"
-    environment:
-      - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/memecoin_launchpad
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./apps/backend:/app
-      - /app/node_modules
-
-  frontend:
-    build:
-      context: ./apps/frontend
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:3001
-    depends_on:
-      - backend
-    volumes:
-      - ./apps/frontend:/app
-      - /app/node_modules
-
 volumes:
   postgres_data:
   redis_data:
