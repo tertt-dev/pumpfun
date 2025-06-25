@@ -1,0 +1,84 @@
+.sidebarLogoTransition {
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.sidebarLogoIcon {
+  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.sidebarLabel {
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.delayShow {
+  transition-delay: 0.1s;
+}
+
+/* Collapsed state */
+.collapsed .sidebarLogoTransition {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.collapsed .sidebarLogoIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.collapsed .sidebarLabel {
+  font-size: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 32px;
+}
+
+.collapsed .delayShow {
+  opacity: 0;
+}
+
+.collapsed .showCollapsed {
+  opacity: 1;
+}
+
+/* Transitions */
+.transitionLeft {
+  transition: left 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.transitionTransform {
+  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.transitionAll {
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+.shakeAnimation {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.sidebarItem:hover .sidebarText {
+  color: white;
+}
+
+.sidebarItemHover:hover {
+  background-color: #262b37;
+}
+
+/* Active state */
+.activeText {
+  color: #87EF9B;
+} 
