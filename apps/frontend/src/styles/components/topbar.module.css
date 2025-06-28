@@ -1,0 +1,111 @@
+.update_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 16px;
+  background: rgba(17, 17, 17, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skeleton_container {
+  gap: 6px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skeleton_container_inner {
+  width: 100%;
+}
+
+.update_bar_trade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  height: 32px;
+  font-size: 14px;
+  max-width: 100%;
+  font-weight: 600;
+  padding: 0px 10px;
+  border-radius: 4px;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  .update_bar_trade {
+    justify-content: center;
+  }
+}
+
+.update_bar_buy {
+  background: #87eeab;
+  color: #000;
+}
+
+.update_bar_sell {
+  background: #fca5a5;
+  color: #000;
+}
+
+.animate_shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.trade_avatar {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.update_bar_token {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  height: 32px;
+  font-size: 14px;
+  max-width: 100%;
+  font-weight: 600;
+  padding: 0px 10px;
+  border-radius: 4px;
+  justify-content: center;
+  background: #4f46e5;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.token_avatar {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

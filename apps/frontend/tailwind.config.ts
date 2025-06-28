@@ -104,13 +104,46 @@ const config: Config = {
   			'slide-out-to-left': {
   				'0%': { transform: 'translateX(0)' },
   				'100%': { transform: 'translateX(-100%)' },
-  			}
+  			},
+  			'shake-transform': {
+  				'0%': { transform: 'translateX(0)' },
+  				'10%': { transform: 'translateX(-25px)' },
+  				'20%': { transform: 'translateX(25px)' },
+  				'30%': { transform: 'translateX(-25px)' },
+  				'40%': { transform: 'translateX(25px)' },
+  				'50%': { transform: 'translateX(-25px)' },
+  				'60%': { transform: 'translateX(25px)' },
+  				'70%': { transform: 'translateX(-25px)' },
+  				'80%': { transform: 'translateX(25px)' },
+  				'90%': { transform: 'translateX(-25px)' },
+  				'100%': { transform: 'translateX(0)' },
+  			},
+  			'shake-color': {
+  				'0%, 10%, 20%': { backgroundColor: '#ff0' },
+  			},
+  			'flash-green': {
+  				'0%': { backgroundColor: 'transparent' },
+  				'10%': { backgroundColor: '#22c55e' },
+  				'20%': { backgroundColor: 'transparent' },
+  				'100%': { backgroundColor: '#22c55e' },
+  			},
+  			'flash-light-green': {
+  				'0%': { backgroundColor: 'transparent' },
+  				'10%': { backgroundColor: 'rgba(134,239,172,0.3)' },
+  				'30%': { backgroundColor: 'transparent' },
+  				'100%': { backgroundColor: 'rgba(134,239,172,0.3)' },
+  			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
   			'slide-in-from-left': 'slide-in-from-left 0.3s ease-out',
-  			'slide-out-to-left': 'slide-out-to-left 0.3s ease-out'
+  			'slide-out-to-left': 'slide-out-to-left 0.3s ease-out',
+  			'shake': 'shake-transform 0.7s ease-in-out, shake-color 0.7s ease-in-out',
+  			'shake-transform': 'shake-transform 0.7s ease-in-out',
+  			'shake-color': 'shake-color 0.7s ease-in-out',
+  			'flash-light-green': 'flash-light-green 0.7s ease-in-out forwards',
+  			'shake-green': 'shake-transform 0.7s ease-in-out, flash-green 0.7s ease-in-out forwards',
   		}
   	}
   },
