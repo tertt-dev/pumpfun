@@ -75,7 +75,10 @@ export function AppSidebar() {
         "sticky bottom-0 left-0 top-0 z-40 flex h-screen min-h-screen flex-col border-r border-r-[rgba(248,250,252,0.1)] bg-background",
         isShaking && styles.shakeAnimation
       )}
-      style={{ width: isCollapsed ? "70.8104px" : "212.185px" }}
+      style={{ 
+        width: isCollapsed ? "70.8104px" : "212.185px",
+        ['--sidebar-width' as string]: isCollapsed ? "70.8104px" : "212.185px"
+      }}
     >
       <div className="flex flex-1 flex-col overflow-hidden">
         <div className="flex-shrink-0 px-2 py-6">
