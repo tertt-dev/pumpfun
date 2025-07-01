@@ -1,0 +1,15 @@
+export const SIDEBAR = {
+  EXPANDED_WIDTH: 212.185,
+  COLLAPSED_WIDTH: 70.8104,
+  MOBILE_BREAKPOINT: 768,
+} as const;
+
+export const ANIMATION = {
+  CAROUSEL_INTERVAL: 3000,
+  SHAKE_DURATION: 300,
+} as const;
+
+export const TRUNCATE = {
+  DEFAULT_LENGTH: 6,
+  ADDRESS_LENGTH: 8,
+} as const; 
