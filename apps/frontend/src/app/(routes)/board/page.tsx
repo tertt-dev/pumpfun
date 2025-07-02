@@ -2,13 +2,20 @@
 
 import Link from 'next/link';
 import { SearchBar } from '@/features/board/components/SearchBar';
+import { FilterSection } from '@/features/board/components/FilterSection';
 import { TrendingCoinsCarousel } from '@/features/board/components/TrendingCoinsCarousel';
 import { TRENDING_COINS } from '@/features/board/data/mock-data';
+import { FilterState } from '@/features/board/types/filters';
 
 export default function BoardPage() {
   const handleSearch = (query: string) => {
     // TODO: Implement search functionality
     console.log('Search query:', query);
+  };
+
+  const handleFilterChange = (filters: FilterState) => {
+    // TODO: Implement filter functionality
+    console.log('Filters changed:', filters);
   };
 
   return (
@@ -27,6 +34,8 @@ export default function BoardPage() {
       <div className="w-full max-w-full overflow-hidden">
         <TrendingCoinsCarousel coins={TRENDING_COINS} />
       </div>
+
+      <FilterSection onFilterChange={handleFilterChange} />
     </div>
   );
 }
