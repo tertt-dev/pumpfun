@@ -19,7 +19,7 @@ export default function BoardPage() {
   };
 
   return (
-    <div className="mt-4 flex w-full flex-col items-center gap-8">
+    <div className="mt-4 flex w-full flex-col items-center">
       <Link
         className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 mb-4 text-2xl text-slate-50 hover:bg-transparent hover:font-bold hover:text-slate-50 hover:underline"
         href="/create"
@@ -27,7 +27,7 @@ export default function BoardPage() {
         [start a new coin]
       </Link>
       
-      <div className="flex w-full md:justify-center">
+      <div className="flex w-full md:justify-center mb-8">
         <SearchBar onSearch={handleSearch} />
       </div>
 
