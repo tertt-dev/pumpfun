@@ -41,7 +41,7 @@ export const TrendingCoinsCarousel = memo(function TrendingCoinsCarousel({
 
   return (
     <section className="relative mb-6">
-      <div className="mb-2 flex items-center justify-between px-6">
+      <div className="mb-2 flex items-center justify-between">
         <h2 className="text-[16px] font-semibold text-white">now trending</h2>
         <div className="flex space-x-2">
           <button 
@@ -65,7 +65,7 @@ export const TrendingCoinsCarousel = memo(function TrendingCoinsCarousel({
       <div className="relative w-full overflow-hidden">
         <div 
           ref={containerRef}
-          className="flex w-full gap-3 overflow-x-auto pb-4 px-6 hide-scrollbar"
+          className="flex w-full gap-3 overflow-x-auto pb-2 hide-scrollbar"
           style={{ 
             width: '100%',
             maxWidth: `calc(100vw - ${sidebarWidth}px - 2px)`

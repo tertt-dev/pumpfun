@@ -126,7 +126,7 @@ export function UpdateBar() {
     }, []);
 
     return (
-        <div className="z-11 relative flex flex-col justify-between md:px-6 lg:flex-row">
+        <div className="z-11 relative flex flex-col justify-between lg:flex-row py-2">
             <div className="flex gap-3 overflow-hidden pb-2 sm:pt-2">
                 <div className="w-full lg:w-auto">
                     <Link

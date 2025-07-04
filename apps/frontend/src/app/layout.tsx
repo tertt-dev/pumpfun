@@ -21,14 +21,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} font-sans antialiased`}>
         <div className="flex min-h-screen">
           <AppSidebar />
-          <div className="flex-1 flex flex-col">
-            <UpdateBar />
-            <main className="flex-1">
-              {children}
-            </main>
+          <div className="flex-1 flex flex-col overflow-hidden">
+            <div className="px-6">
+              <UpdateBar />
+              <div className="flex-1 overflow-auto">
+                {children}
+              </div>
+            </div>
           </div>
         </div>
       </body>
     </html>
-  )
+  );
 }

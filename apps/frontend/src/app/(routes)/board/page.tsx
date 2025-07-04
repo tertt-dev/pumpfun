@@ -1,10 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import { SearchBar } from '@/features/board/components/SearchBar';
 import { FilterSection } from '@/features/board/components/FilterSection';
 import { TrendingCoinsCarousel } from '@/features/board/components/TrendingCoinsCarousel';
+import { CoinGrid } from '@/features/board/components/CoinGrid/CoinGrid';
 import { TRENDING_COINS } from '@/features/board/data/mock-data';
+import { MOCK_COINS } from '@/features/board/data/coins-mock-data';
 import { FilterState } from '@/features/board/types/filters';
 
 export default function BoardPage() {
@@ -19,15 +20,8 @@ export default function BoardPage() {
   };
 
   return (
-    <div className="mt-4 flex w-full flex-col items-center">
-      <Link
-        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 mb-4 text-2xl text-slate-50 hover:bg-transparent hover:font-bold hover:text-slate-50 hover:underline"
-        href="/create"
-      >
-        [start a new coin]
-      </Link>
-      
-      <div className="flex w-full md:justify-center mb-8">
+    <div className="mt-4">
+      <div className="flex w-full md:justify-center mb-8 mt-10">
         <SearchBar onSearch={handleSearch} />
       </div>
 
@@ -35,7 +29,21 @@ export default function BoardPage() {
         <TrendingCoinsCarousel coins={TRENDING_COINS} />
       </div>
 
-      <FilterSection onFilterChange={handleFilterChange} />
+      <div className="mb-2 flex gap-4 sm:mb-0">
+        <button className="grid cursor-pointer gap-1 text-green-300">
+          explore
+          <span className="h-1 w-full rounded bg-green-300"></span>
+        </button>
+        <button className="grid cursor-pointer gap-1 text-gray-500">
+          watchlist
+        </button>
+      </div>
+
+      <div className="my-1">
+        <FilterSection onFilterChange={handleFilterChange} />
+      </div>
+
+      <CoinGrid coins={MOCK_COINS} />
     </div>
   );
 }

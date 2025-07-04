@@ -38,8 +38,7 @@ export function FilterSection({ onFilterChange }: FilterSectionProps) {
     <div 
       className="w-full overflow-hidden"
       style={{ 
-        maxWidth: `calc(100vw - ${sidebarWidth}px - 48px)`,
-        margin: '0 24px'
+        maxWidth: `calc(100vw - ${sidebarWidth}px)`
       }}
     >
       <div className="flex max-w-full flex-col justify-start overflow-hidden md:flex-row md:items-center md:gap-2">
