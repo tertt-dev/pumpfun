@@ -24,7 +24,6 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Mock data - in real app this would be fetched from API
     const mockCoinData: CoinData = {
       id: params.id,
       name: 'POOP',
@@ -33,7 +32,7 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
       replies: 16,
       creator: {
         address: 'FP28ArhJn8ovU5xY6uFi1LmKb8CLqs9BMxNJjGBjYz8Z',
-        avatar: 'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&img-dpr=2&img-onerror=redirect',
+        avatar: 'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
         displayName: 'FP28Ar'
       },
       createdAt: '24 minutes ago'
@@ -70,9 +69,7 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
     <div className="max-w-8xl mx-auto mb-16 hidden overflow-x-hidden md:block">
       <div className="flex flex-col px-4">
         <div className="flex w-full">
-          {/* Левый блок: кнопка, инфо, чарт */}
           <div className="flex-1 min-w-0 space-y-4">
-            {/* Go Back Button */}
             <div className="mb-1 mt-1 flex">
               <button 
                 onClick={handleGoBack}
@@ -82,7 +79,6 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
               </button>
             </div>
 
-            {/* Coin Information */}
             <div className="mb-1 flex w-full flex-wrap items-center justify-between gap-x-[0.5px] gap-y-[14px] text-sm font-normal">
               <div className="flex flex-wrap items-center gap-4">
                 <div className="flex-shrink-0 text-sm font-medium text-[#F8FAFC]">
@@ -127,7 +123,6 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
               <div className="ml-auto pl-2"></div>
             </div>
 
-            {/* Chart Placeholder */}
             <div className="flex flex-col overflow-y-auto">
               <div className="mb-5 w-full"></div>
               <div style={{ height: '600px', width: '100%' }}>
@@ -145,13 +140,11 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
               <div className="w-full max-w-[1000px]"></div>
             </div>
 
-            {/* Thread/Trades Buttons */}
             <div className="mt-2 flex h-fit gap-2">
               <div className="cursor-pointer rounded px-1 bg-green-300 text-black">thread</div>
               <div className="cursor-pointer rounded px-1 text-gray-500 hover:bg-gray-800">trades</div>
             </div>
 
-            {/* Sort and Post a Reply */}
             <div className="mb-4 mt-1 flex items-center md:mb-1">
               <button className="flex items-center gap-1 rounded-md bg-[#303947] px-2 py-1 text-sm text-white shadow-sm transition duration-200 hover:bg-gray-600 focus:outline-none">
                 sort: time (oldest)
@@ -162,9 +155,7 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
               </div>
             </div>
 
-            {/* Thread List */}
             <div className="relative grid gap-1 text-slate-300">
-              {/* Example message 1 */}
               <div className="grid h-fit gap-1 bg-[#2e303a] p-1 text-sm">
                 <div className="flex gap-1 text-xs">
                   <a href="/profile/FP28ArhJn8ovU5xY6uFi1LmKb8CLqs9BMxNJjGBjYz8Z">
@@ -176,14 +167,13 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
                   <div className="text-slate-400">7/5/2025, 5:57:17 PM</div>
                 </div>
                 <div className="relative items-start gap-3 overflow-auto text-xs text-slate-300 flex">
-                  <img alt="name" loading="lazy" width="800" height="800" decoding="async" className="max-h-screen w-32 cursor-pointer object-contain" src="https://pump.mypinata.cloud/ipfs/bafybeigdp3oicmwnywdcm7u5v3f6vmptyuca3qabaeo4oagkjexhxs4ru4?img-width=800&img-dpr=2&img-onerror=redirect" style={{ color: 'transparent' }} />
+                  <img alt="name" loading="lazy" width="800" height="800" decoding="async" className="max-h-screen w-32 cursor-pointer object-contain" src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=800&img-dpr=2&img-onerror=redirect" style={{ color: 'transparent' }} />
                   <div className="grid">
                     <div className="text-sm font-bold">POOP (POOP)</div>
                     <div className="break-anywhere"> </div>
                   </div>
                 </div>
               </div>
-              {/* Example message 2 */}
               <div id="p120790934" className="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200">
                 <div className="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400">
                   <a href="/profile/ogcqmhs5h4">
@@ -202,20 +192,16 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
                 <div className="flex items-start gap-2"><div>new meta loading</div></div>
                 <div className="flex gap-2"></div>
               </div>
-              {/* ... можно добавить еще мок-сообщений ... */}
             </div>
 
-            {/* Bottom actions */}
             <div className="mt-4 flex w-full items-center justify-between md:mt-0">
               <div className="cursor-pointer text-sm text-white hover:underline">[scroll to top]</div>
               <div className="ml-2 flex cursor-pointer items-center gap-1 rounded-md bg-green-300 px-2 py-1 text-sm text-black shadow-sm transition duration-200 hover:bg-green-400 focus:outline-none">post a reply</div>
             </div>
 
-            {/* Карусель похожих монет внутри левого блока */}
             <SimilarCoinsCarousel />
           </div>
 
-          {/* Правый блок: вставляю содержимое */}
           <div className="ml-8 mt-[4.5rem] w-[350px] flex-shrink-0 space-y-4">
             <div className="space-y-4">
               <div className="grid w-[350px] gap-4">
@@ -255,7 +241,7 @@ export default function CoinDetailPage({ params }: { params: { id: string } }) {
               </div>
               <div className="grid w-full gap-4 rounded-lg border border-none bg-transparent text-gray-400 md:w-[350px]">
                 <div className="h-fit items-start gap-4 flex">
-                  <img alt="POOP logo" loading="lazy" width="256" height="256" decoding="async" className="w-32 cursor-pointer object-contain" src="https://pump.mypinata.cloud/ipfs/bafybeigdp3oicmwnywdcm7u5v3f6vmptyuca3qabaeo4oagkjexhxs4ru4?img-width=256&img-dpr=2&img-onerror=redirect" style={{ color: 'transparent' }} />
+                  <img alt="POOP logo" loading="lazy" width="256" height="256" decoding="async" className="w-32 cursor-pointer object-contain" src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=256&img-dpr=2&img-onerror=redirect" style={{ color: 'transparent' }} />
                   <div>
                     <div className="text-sm font-bold">POOP (POOP)</div>
                     <div className="break-anywhere break-words text-xs text-gray-400"> </div>

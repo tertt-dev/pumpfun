@@ -7,7 +7,7 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "PEPS",
     marketCap: "2.8M",
     replies: 342,
-    image: "https://pump.mypinata.cloud/ipfs/bafkreicn7doi6zrxzy6gslagd5n67worlvjwrfrfxw3ipobobltslydonq",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "Pepe Takes Over Solana as Meme Season Continues",
     isLive: false
   },
@@ -17,7 +17,7 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "SCAT",
     marketCap: "1.5M",
     replies: 156,
-    image: "https://pump.mypinata.cloud/ipfs/QmQw4DQjdWp3G8TuMCykG8SVSwtFwkxvTyxEWNMuAVYU4q",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "Cat Memes Find New Home on Solana Blockchain",
     isLive: true
   },
@@ -27,7 +27,7 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "FRENS",
     marketCap: "4.1M",
     replies: 567,
-    image: "https://pump.mypinata.cloud/ipfs/QmU5D2LBjkriYD4wqL5cEVwv1x1xqj2LCQAPKC79cVGd34",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "Building Friendships on the Blockchain",
     isLive: true
   },
@@ -37,7 +37,7 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "LORD",
     marketCap: "1.8M",
     replies: 289,
-    image: "https://pump.mypinata.cloud/ipfs/bafybeic4b5sqghlzsfjg7tbywaepjes6ducb3birrbznya2up5jbku2u7i",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "The Ultimate Meme Governance Token",
     isLive: false
   },
@@ -47,7 +47,7 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "PUNK",
     marketCap: "2.5M",
     replies: 345,
-    image: "https://pump.mypinata.cloud/ipfs/bafkreigjpu5oc7ipkandvhmv2c3mdmylo26v4spaovkynnmku2a4ca7gii",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "Bringing Punk Culture to Solana",
     isLive: false
   },
@@ -57,9 +57,8 @@ export const TRENDING_COINS: TrendingCoin[] = [
     symbol: "BFRENS",
     marketCap: "1.2M",
     replies: 178,
-    image: "https://pump.mypinata.cloud/ipfs/Qmc4ieJEoSvAMbdN1nCFvxDqoMyXNgaJocYCYQnavztHLc",
+    image: "https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect",
     description: "The Friendly Side of Bonk Ecosystem",
     isLive: true
   },
-  // ... rest of the mock data
 ]; 

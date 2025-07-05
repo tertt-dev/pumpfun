@@ -7,9 +7,9 @@ const creators = [
 ];
 
 const mockImages = [
-  'https://pump.mypinata.cloud/ipfs/bafybeifeg5mihba762hhmnwly6ibpp6gajzsxdmam6nznygswduu2poiie',
-  'https://pump.mypinata.cloud/ipfs/bafkreiaksyfls4dwiine734avxwofmj4qavgbuku4md7pcpiltw5lyhqqm',
-  'https://pump.mypinata.cloud/ipfs/bafybeihqi5kjkcvnnuaqppbt4p6inovvp5wnjmvypftiriqi7kq5ty6wbm',
+  'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
+  'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
+  'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
 ];
 
 export const MOCK_COINS: Coin[] = Array.from({ length: 48 }, (_, i) => ({

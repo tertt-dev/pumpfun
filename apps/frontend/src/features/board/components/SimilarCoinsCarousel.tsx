@@ -8,7 +8,7 @@ const similarCoins = [
     marketCap: '4.1K',
     replies: 8,
     created: '7d ago',
-    image: 'https://pump.mypinata.cloud/ipfs/bafkreihvotrepb2252f64nwl2yp5gqw737gshtcrwdc3k54twbax75s2iq?img-width=76&img-dpr=2&img-onerror=redirect',
+    image: 'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
   },
   {
     id: '2B6JyKFSytHEBNGHmXcxKe5VLHMdsQks1BbVbq3Tpump',
@@ -17,7 +17,7 @@ const similarCoins = [
     marketCap: '4.1K',
     replies: 2,
     created: '1mo ago',
-    image: 'https://pump.mypinata.cloud/ipfs/QmPruh8LHKwjPEzqQksRpTLDBx75KXMeDFmLUDh2ZRKkun?img-width=76&img-dpr=2&img-onerror=redirect',
+    image: 'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
   },
   {
     id: '2CjAJKGENsEwNNRDedaLKPdyxk64FRGbtPzDN8s1pump',
@@ -26,9 +26,8 @@ const similarCoins = [
     marketCap: '4.1K',
     replies: 79,
     created: '2mo ago',
-    image: 'https://pump.mypinata.cloud/ipfs/QmV4TEF3SFJeiZikDq71xzeADGRVUjFMqug5WBhfbKybSZ?img-width=76&img-dpr=2&img-onerror=redirect',
+    image: 'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=128&img-dpr=2&img-onerror=redirect',
   },
-  // ... можно добавить еще мок-данных ...
 ];
 
 export const SimilarCoinsCarousel = () => {
@@ -94,7 +93,6 @@ export const SimilarCoinsCarousel = () => {
   );
 };
 
-// Стили для скрытия скроллбара
 <style jsx global>{`
   .hide-scrollbar {
     scrollbar-width: none;
