@@ -1,6 +1,6 @@
 Streaming transaction logs mentioning Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4. Confirmed commitment
-Transaction executed in slot 4:
-  Signature: XEgmo6WseD8zAngD6T8bRUccGeMV1nHXLYhnpu7LenAZsrEejcaegmsVATszv18vviQBm9kK5Z18C5ReXhNn8tg
+Transaction executed in slot 3:
+  Signature: 2KrnP411fT2os9cUWS54CKW246YdnmwNJUPgwVDj5aPF2ZsyL5JWeWSeREcncaB3v4y3JsCU8jowQmD2zunav5C9
   Status: Ok
   Log Messages:
     Program Cc3ahaHpu9m7bUxmZptwqdFiGrM1pMJqqmh6fY6zE9m4 invoke [1]
