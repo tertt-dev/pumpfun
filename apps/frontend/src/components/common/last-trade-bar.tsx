@@ -9,15 +9,7 @@ import { Sheet } from "@/components/ui/sheet"
 import Skeleton from "react-loading-skeleton"
 import "react-loading-skeleton/dist/skeleton.css"
 import styles from "@/styles/components/topbar.module.css"
-
-// Utility function for truncating addresses
-const truncate = (str: string, n: number, position: "start" | "end" = "end", withEllipsis: boolean = true) => {
-    if (str.length <= n) return str;
-    if (position === "start") {
-        return `${withEllipsis ? '...' : ''}${str.slice(str.length - n)}`;
-    }
-    return `${str.slice(0, n)}${withEllipsis ? '...' : ''}`;
-};
+import { WalletConnectButton } from '../wallet/WalletConnectButton'
 
 const LastTradesMock = [
     {
@@ -89,6 +81,19 @@ const LastTokenCreatedMock = [
     }
 ]
 
+const truncate = (str: string, n: number = 6) => {
+    if (str.length <= n) return str;
+    return `${str.slice(0, n)}...`;
+};
+
+interface Trade {
+    tokenAddress: string;
+    tokenCreatorPicture: string;
+    ticker: string;
+    wallet: string;
+    transationType: 'buy' | 'sell';
+}
+
 export function UpdateBar() {
     const [loading, setLoading] = useState(true);
     const [showCreateButton, setShowCreateButton] = useState(false);
@@ -110,7 +115,6 @@ export function UpdateBar() {
             setTradeShakeKey(prev => prev + 1);
         }, 3000);
 
-        // Offset token creation updates by 1.5 seconds
         const tokenInterval = setTimeout(() => {
             const interval = setInterval(() => {
                 setLatestTokenCreated(getRandomItem(LastTokenCreatedMock));
@@ -223,12 +227,7 @@ export function UpdateBar() {
                     >
                         create coin
                     </Link>
-                    <button
-                        className="h-8 w-20 rounded bg-green-300 px-3 py-1 text-sm font-semibold text-black hover:bg-green-500"
-                        type="button"
-                    >
-                        log in
-                    </button>
+                    <WalletConnectButton />
                 </div>
             </div>
         </div>
